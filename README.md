@@ -1,20 +1,20 @@
 # Ionic TTS App
 
-## Install Ionic##
+## Install Ionic
 ``` 
 $ npm install -g ionic cordova
 ```
 
-## Install dependencies##
+## Install dependencies
 ```
 $ npm install
 ```
 
-## Run on Android Device##
+## Run on Android Device
 ```
 $ ionic cordova run android
 ```
-## Run on iOS Device##
+## Run on iOS Device
 ```
 $ ionic cordova run ios
 ```
