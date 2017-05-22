@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title text-center>
+      Ionic Speaking
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-item [(ngModel)]="text">
+    <ion-input placeholder="Let me say something"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Locale</ion-label>
+    <ion-select [(ngModel)]="locale">
+      <ion-option>en-US</ion-option>
+      <ion-option>en-GB</ion-option>
+      <ion-option>de-DE</ion-option>
+      <ion-option>es-ES</ion-option>
+      <ion-option>zh-CN</ion-option>
+      <ion-option>ru-RU</ion-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+  <ion-range snaps="true" pin="true" step="10" [(ngModel)]="rate">
+    <ion-icon range-left small name="speedometer"></ion-icon>
+    <ion-icon range-right name="speedometer"></ion-icon>
+  </ion-range>
+</ion-item>
+
+<button ion-button full color="primary" (click)="speak()">
+  <ion-icon name="megaphone"> Speak!</ion-icon>
+</button>
+
+</ion-content>
